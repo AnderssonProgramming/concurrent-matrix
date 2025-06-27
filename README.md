@@ -62,6 +62,8 @@ mvn spring-boot:run
 ```bash
 mvn package
 java -jar target/concurrent-matrix-0.0.1-SNAPSHOT.jar
+or
+java -cp target\classes org.game.Main
 ```
 
 #### Running directly with Maven:
@@ -70,6 +72,9 @@ mvn clean compile exec:java -Dexec.mainClass="edu.eci.arsw.concurrent_matrix.Gam
 ```
 
 The game will initialize the matrix, place the entities randomly, and start the concurrent simulation.
+
+![alt text](assets/image.png)
+![alt text](assets/image-1.png)
 
 ## Game Architecture
 
