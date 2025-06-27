@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>edu.eci.arsw</groupId>
-	<artifactId>concurrent-matrix</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>concurrent-matrix</name>
+	<artifactId>MatrixConcurrent</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<name>MatrixConcurrent</name>
 	<description>This is a concurrent matrix in Java</description>
 	<url/>
 	<licenses>
@@ -47,6 +47,19 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.3.0</version>
+				<configuration>
+					<archive>
+						<manifest>
+							<addClasspath>true</addClasspath>
+							<mainClass>org.game.Main</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
